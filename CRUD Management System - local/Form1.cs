@@ -95,7 +95,7 @@ namespace CRUD_Management_System___local
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e) // when double click on the data grid view row
         {
-            if (selectedId != 0)
+            if (selectedId == 0)
             {
                 selectedId = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[0].Value); // this gets the ID of the selected row
                 textBox2.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString(); // get the Name of the row
